@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CrossPlatformLibrary.WebBrowser</id>
+    <version>1.0.0-pre4</version>
+    <title>CrossPlatformLibrary.WebBrowser</title>
+    <authors>Thomas Galliker</authors>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/thomasgalliker/CrossPlatformLibrary.WebBrowser</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>CrossPlatformLibrary.WebBrowser is a cross-platform abstraction which allows to open browser requests.</summary>
+    <description>CrossPlatformLibrary.WebBrowser is a cross-platform abstraction which allows to open browser requests.</description>
+    <tags>
+      xamarin pcl CrossPlatformLibrary.WebBrowser plugin for web browser requests
+      windows phone winphone wp8 wpa81 win81 windowsphone android xamarin.forms xamarin.ios ios monoandroid monodroid monotouch mvvmcross mvvmlight
+    </tags>
+    <releaseNotes>
+      This is the initial release of CrossPlatformLibrary.WebBrowser. Please report problems here: https://github.com/thomasgalliker/CrossPlatformLibrary.WebBrowser.
+      Contributions on github are welcome!
+    </releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <language>en-US</language>
+    <dependencies>
+      <group targetFramework="monotouch10">
+        <dependency id="Guards" version="1.0.10" />
+        <dependency id="CrossPlatformLibrary" version="1.0.71" />
+      </group>
+      <group targetFramework="xamarin.ios10">
+        <dependency id="Guards" version="1.0.10" />
+        <dependency id="CrossPlatformLibrary" version="1.0.71" />
+      </group>
+      <group targetFramework="monoandroid10">
+        <dependency id="Guards" version="1.0.10" />
+        <dependency id="CrossPlatformLibrary" version="1.0.71" />
+      </group>
+      <group targetFramework="wp8">
+        <dependency id="Guards" version="1.0.10" />
+        <dependency id="CrossPlatformLibrary" version="1.0.71" />
+      </group>
+      <group targetFramework="wpa81">
+        <dependency id="Guards" version="1.0.10" />
+        <dependency id="CrossPlatformLibrary" version="1.0.71" />
+      </group>
+      <group targetFramework="win81">
+        <dependency id="Guards" version="1.0.10" />
+        <dependency id="CrossPlatformLibrary" version="1.0.71" />
+      </group>
+      <group targetFramework="portable-net45+dnxcore50+wp80+wpa81+win81+netcore45+monoandroid10+monotouch10+xamarin.ios10">
+        <dependency id="Guards" version="1.0.10" />
+        <dependency id="CrossPlatformLibrary" version="1.0.71" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!--PCL-->
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\portable-net45+dnxcore50+wp80+wpa81+win81+netcore45+monoandroid10+monotouch10+xamarin.ios10\CrossPlatformLibrary.WebBrowser.dll" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\portable-net45+dnxcore50+wp80+wpa81+win81+netcore45+monoandroid10+monotouch10+xamarin.ios10\CrossPlatformLibrary.WebBrowser.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\portable-net45+dnxcore50+wp80+wpa81+win81+netcore45+monoandroid10+monotouch10+xamarin.ios10\CrossPlatformLibrary.WebBrowser.xml" />
+
+    <!--Xamarin.Android-->
+    <file src="..\CrossPlatformLibrary.WebBrowser.Android\bin\Release\CrossPlatformLibrary.WebBrowser.Platform.dll" target="lib\monoandroid10\CrossPlatformLibrary.WebBrowser.Platform.dll" />
+    <file src="..\CrossPlatformLibrary.WebBrowser.Android\bin\Release\CrossPlatformLibrary.WebBrowser.Platform.pdb" target="lib\monoandroid10\CrossPlatformLibrary.WebBrowser.Platform.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser.Android\bin\Release\CrossPlatformLibrary.WebBrowser.Platform.xml" target="lib\monoandroid10\CrossPlatformLibrary.WebBrowser.Platform.xml" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\monoandroid10\CrossPlatformLibrary.WebBrowser.dll" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\monoandroid10\CrossPlatformLibrary.WebBrowser.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\monoandroid10\CrossPlatformLibrary.WebBrowser.xml" />
+    
+    <!--Xamarin.iOS Classic API-->
+    <file src="..\CrossPlatformLibrary.WebBrowser.iOS\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.Platform.dll" target="lib\monotouch10\CrossPlatformLibrary.WebBrowser.Platform.dll" />
+    <!--<file src="..\CrossPlatformLibrary.WebBrowser.iOS\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.Platform.pdb" target="lib\monotouch10\CrossPlatformLibrary.WebBrowser.Platform.pdb" />-->
+    <file src="..\CrossPlatformLibrary.WebBrowser.iOS\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.Platform.xml" target="lib\monotouch10\CrossPlatformLibrary.WebBrowser.Platform.xml" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\monotouch10\CrossPlatformLibrary.WebBrowser.dll" />
+    <!--<file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\monotouch10\CrossPlatformLibrary.WebBrowser.pdb" />-->
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\monotouch10\CrossPlatformLibrary.WebBrowser.xml" />
+    
+    <!--Xamarin.iOS Unified API-->
+    <file src="..\CrossPlatformLibrary.WebBrowser.iOSUnified\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.Platform.dll" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.Platform.dll" />
+    <!--<file src="..\CrossPlatformLibrary.WebBrowser.iOSUnified\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.Platform.pdb" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.Platform.pdb" />-->
+    <file src="..\CrossPlatformLibrary.WebBrowser.iOSUnified\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.Platform.xml" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.Platform.xml" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.dll" />
+    <!--<file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.pdb" />-->
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.xml" />
+    
+    <!--Windows Phone 8-->
+    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone8\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.dll" target="lib\wp8\CrossPlatformLibrary.WebBrowser.Platform.dll" />
+    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone8\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.pdb" target="lib\wp8\CrossPlatformLibrary.WebBrowser.Platform.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone8\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.xml" target="lib\wp8\CrossPlatformLibrary.WebBrowser.Platform.xml" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\wp8\CrossPlatformLibrary.WebBrowser.dll" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\wp8\CrossPlatformLibrary.WebBrowser.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\wp8\CrossPlatformLibrary.WebBrowser.xml" />
+    
+    <!--Windows Phone 8.1-->
+    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone81\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.dll" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.Platform.dll" />
+    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone81\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.pdb" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.Platform.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone81\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.xml" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.Platform.xml" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.dll" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\wp8\CrossPlatformLibrary.WebBrowser.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.xml" />
+    
+    <!--Windows Store-->
+    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsStore\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.dll" target="lib\win81\CrossPlatformLibrary.WebBrowser.Platform.dll" />
+    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsStore\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.pdb" target="lib\win81\CrossPlatformLibrary.WebBrowser.Platform.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsStore\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.xml" target="lib\win81\CrossPlatformLibrary.WebBrowser.Platform.xml" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\win81\CrossPlatformLibrary.WebBrowser.dll" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\wp8\CrossPlatformLibrary.WebBrowser.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\win81\CrossPlatformLibrary.WebBrowser.xml" />
+    
+    <file src="tools\init.ps1" target="tools\init.ps1" />
+    <file src="tools\install.ps1" target="tools\install.ps1" />
+    <file src="tools\uninstall.ps1" target="tools\uninstall.ps1" />
+  </files>
+</package>
