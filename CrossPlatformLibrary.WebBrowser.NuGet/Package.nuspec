@@ -94,7 +94,7 @@
     <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone81\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.pdb" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.Platform.pdb" />
     <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone81\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.xml" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.Platform.xml" />
     <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.dll" />
-    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\wp8\CrossPlatformLibrary.WebBrowser.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.pdb" />
     <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.xml" />
     
     <!--Windows Store-->
@@ -102,7 +102,7 @@
     <file src="..\CrossPlatformLibrary.WebBrowser.WindowsStore\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.pdb" target="lib\win81\CrossPlatformLibrary.WebBrowser.Platform.pdb" />
     <file src="..\CrossPlatformLibrary.WebBrowser.WindowsStore\Bin\Release\CrossPlatformLibrary.WebBrowser.Platform.xml" target="lib\win81\CrossPlatformLibrary.WebBrowser.Platform.xml" />
     <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\win81\CrossPlatformLibrary.WebBrowser.dll" />
-    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\wp8\CrossPlatformLibrary.WebBrowser.pdb" />
+    <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\win81\CrossPlatformLibrary.WebBrowser.pdb" />
     <file src="..\CrossPlatformLibrary.WebBrowser\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\win81\CrossPlatformLibrary.WebBrowser.xml" />
     
     <file src="tools\init.ps1" target="tools\init.ps1" />
