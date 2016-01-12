@@ -11,7 +11,7 @@ namespace CrossPlatformLibrary.WebBrowser
     {
         private readonly ITracer tracer;
 
-        public WebBrowserBase(ITracer tracer)
+        protected WebBrowserBase(ITracer tracer)
         {
             Guard.ArgumentNotNull(() => tracer);
 
