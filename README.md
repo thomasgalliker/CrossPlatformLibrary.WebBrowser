@@ -12,7 +12,7 @@ You can use this library in any .Net project which is compatible to PCL (e.g. Xa
 CrossPlatformLibrary.WebBrowser provides a simple and platform-agnostic interface, ```IWebBrowser``` which can be used to open an URL in the web browser on the target platform:
 
 ```csharp
-IWebBrowser webBrowser = new WebBrowser(); // Get instance from IoC container via dependency injection, if possible
+IWebBrowser webBrowser = SimpleIoc.Default.GetInstance<IWebBrowser>(); // Use dependency injection if possible
 webBrowser.OpenUrl("http://www.thomasgalliker.ch");
 ```
 
