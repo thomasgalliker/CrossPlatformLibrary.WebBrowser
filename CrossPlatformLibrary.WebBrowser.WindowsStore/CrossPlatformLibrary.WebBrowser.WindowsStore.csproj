@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CrossPlatformLibrary.WebBrowser</RootNamespace>
-    <AssemblyName>CrossPlatformLibrary.WebBrowser.Platform</AssemblyName>
+    <AssemblyName>CrossPlatformLibrary.WebBrowser</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
@@ -33,7 +33,7 @@
     <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\CrossPlatformLibrary.WebBrowser.Platform.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\CrossPlatformLibrary.WebBrowser.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -102,18 +102,11 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\CrossPlatformLibrary.WebBrowser.WindowsPhone81\WebBrowser.cs">
-      <Link>WebBrowser.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CrossPlatformLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformLibrary.1.0.73\lib\win81\CrossPlatformLibrary.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="CrossPlatformLibrary.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformLibrary.1.0.73\lib\win81\CrossPlatformLibrary.Platform.dll</HintPath>
+      <HintPath>..\packages\CrossPlatformLibrary.2.0.0-pre5\lib\win81\CrossPlatformLibrary.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Guards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac6aedb73a72f46e, processorArchitecture=MSIL">
@@ -124,20 +117,16 @@
       <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PlatformAdapter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6631b0d7444ed877, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformAdapter.1.0.12\lib\win81\PlatformAdapter.dll</HintPath>
+    <Reference Include="Tracing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tracing.1.0.2\lib\win81\Tracing.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CrossPlatformLibrary.WebBrowser\CrossPlatformLibrary.WebBrowser.csproj">
-      <Project>{a6fcef44-d2ba-42c7-b3cb-13667bcd7b54}</Project>
-      <Name>CrossPlatformLibrary.WebBrowser</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <Import Project="..\CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems" Label="Shared" />
+  <Import Project="..\CrossPlatformLibrary.WebBrowser.WinRT.Shared\CrossPlatformLibrary.WebBrowser.WinRT.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

@@ -1,7 +1,4 @@
-﻿using System;
-
-using CrossPlatformLibrary.Tracing;
-
+﻿using Tracing;
 #if __UNIFIED__
 using UIKit;
 using Foundation;

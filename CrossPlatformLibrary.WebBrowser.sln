@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{B5AEA046-0E87-4A7B-8F11-80B6BDDA1F2A}"
 EndProject
@@ -42,7 +42,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBrowserSample.WindowsPho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBrowserSample", "Samples\WebBrowserSample\WebBrowserSample\WebBrowserSample.csproj", "{E923B415-7E6A-4BE0-87A3-F524D4BF9518}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CrossPlatformLibrary.WebBrowser.Shared", "CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.shproj", "{BDE7D0AC-E429-4584-B91C-090A0CC6C338}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CrossPlatformLibrary.WebBrowser.WinRT.Shared", "CrossPlatformLibrary.WebBrowser.WinRT.Shared\CrossPlatformLibrary.WebBrowser.WinRT.Shared.shproj", "{12926209-64C4-40ED-B8F3-4430377DE8F8}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		CrossPlatformLibrary.WebBrowser.WinRT.Shared\CrossPlatformLibrary.WebBrowser.WinRT.Shared.projitems*{12926209-64c4-40ed-b8f3-4430377de8f8}*SharedItemsImports = 13
+		CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems*{2882aeeb-d4cd-4eb9-8a6c-6653b33681f0}*SharedItemsImports = 4
+		CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems*{56a56f17-7de1-4ca1-9617-bf32e971ac84}*SharedItemsImports = 4
+		CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems*{5876144b-47dd-4c4e-b421-bc03f191b996}*SharedItemsImports = 4
+		CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems*{7169373f-0b82-4e5d-9129-7cc3065b90fa}*SharedItemsImports = 4
+		CrossPlatformLibrary.WebBrowser.WinRT.Shared\CrossPlatformLibrary.WebBrowser.WinRT.Shared.projitems*{7169373f-0b82-4e5d-9129-7cc3065b90fa}*SharedItemsImports = 4
+		CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems*{a6fcef44-d2ba-42c7-b3cb-13667bcd7b54}*SharedItemsImports = 4
+		CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems*{bde7d0ac-e429-4584-b91c-090a0cc6c338}*SharedItemsImports = 13
+		CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems*{d7f3aa16-8ef1-4924-9e0a-dad4ab46b2eb}*SharedItemsImports = 4
+		CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems*{ed9a4ca1-c04c-457d-9a2e-7995ccf12356}*SharedItemsImports = 4
+		CrossPlatformLibrary.WebBrowser.WinRT.Shared\CrossPlatformLibrary.WebBrowser.WinRT.Shared.projitems*{ed9a4ca1-c04c-457d-9a2e-7995ccf12356}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
 		Ad-Hoc|ARM = Ad-Hoc|ARM

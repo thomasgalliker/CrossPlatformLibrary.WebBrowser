@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CrossPlatformLibrary.WebBrowser</RootNamespace>
-    <AssemblyName>CrossPlatformLibrary.WebBrowser.Platform</AssemblyName>
+    <AssemblyName>CrossPlatformLibrary.WebBrowser</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -34,15 +34,11 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\CrossPlatformLibrary.WebBrowser.Platform.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\CrossPlatformLibrary.WebBrowser.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrossPlatformLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformLibrary.1.0.73\lib\MonoAndroid10\CrossPlatformLibrary.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="CrossPlatformLibrary.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformLibrary.1.0.73\lib\MonoAndroid10\CrossPlatformLibrary.Platform.dll</HintPath>
+      <HintPath>..\packages\CrossPlatformLibrary.2.0.0-pre5\lib\MonoAndroid10\CrossPlatformLibrary.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Guards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac6aedb73a72f46e, processorArchitecture=MSIL">
@@ -55,15 +51,15 @@
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
-    <Reference Include="PlatformAdapter">
-      <HintPath>..\packages\CrossPlatformAdapter.1.0.12\lib\MonoAndroid10\PlatformAdapter.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Runtime" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="Tracing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tracing.1.0.2\lib\monoandroid10\Tracing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -71,14 +67,9 @@
     <Compile Include="WebBrowser.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CrossPlatformLibrary.WebBrowser\CrossPlatformLibrary.WebBrowser.csproj">
-      <Project>{a6fcef44-d2ba-42c7-b3cb-13667bcd7b54}</Project>
-      <Name>CrossPlatformLibrary.WebBrowser</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <Import Project="..\CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

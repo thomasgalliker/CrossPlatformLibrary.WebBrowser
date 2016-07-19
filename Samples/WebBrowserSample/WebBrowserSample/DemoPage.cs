@@ -1,6 +1,4 @@
-﻿using System;
-
-using CrossPlatformLibrary.IoC;
+﻿using CrossPlatformLibrary.IoC;
 using CrossPlatformLibrary.WebBrowser;
 
 using Xamarin.Forms;

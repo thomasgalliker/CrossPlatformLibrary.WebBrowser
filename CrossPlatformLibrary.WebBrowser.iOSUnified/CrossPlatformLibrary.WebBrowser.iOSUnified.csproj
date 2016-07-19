@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>CrossPlatformLibrary.WebBrowser</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>CrossPlatformLibrary.WebBrowser.Platform</AssemblyName>
+    <AssemblyName>CrossPlatformLibrary.WebBrowser</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <DocumentationFile>bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.Platform.xml</DocumentationFile>
+    <DocumentationFile>bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.xml</DocumentationFile>
     <DefineConstants>TRACE;__UNIFIED__;__MOBILE__;__IOS__;</DefineConstants>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
@@ -45,11 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CrossPlatformLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformLibrary.1.0.73\lib\xamarin.ios10\CrossPlatformLibrary.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="CrossPlatformLibrary.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformLibrary.1.0.73\lib\xamarin.ios10\CrossPlatformLibrary.Platform.dll</HintPath>
+      <HintPath>..\packages\CrossPlatformLibrary.2.0.0-pre5\lib\xamarin.ios10\CrossPlatformLibrary.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Guards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac6aedb73a72f46e, processorArchitecture=MSIL">
@@ -60,23 +56,18 @@
       <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="PlatformAdapter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6631b0d7444ed877, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformAdapter.1.0.12\lib\xamarin.ios10\PlatformAdapter.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="Tracing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Tracing.1.0.2\lib\xamarin.ios10\Tracing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Xamarin.iOS" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CrossPlatformLibrary.WebBrowser\CrossPlatformLibrary.WebBrowser.csproj">
-      <Project>{a6fcef44-d2ba-42c7-b3cb-13667bcd7b54}</Project>
-      <Name>CrossPlatformLibrary.WebBrowser</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <Import Project="..\CrossPlatformLibrary.WebBrowser.Shared\CrossPlatformLibrary.WebBrowser.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

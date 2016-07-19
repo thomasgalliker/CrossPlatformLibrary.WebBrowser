@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows;
 
-using CrossPlatformLibrary.Tracing;
-
 using Microsoft.Phone.Tasks;
+
+using Tracing;
 
 namespace CrossPlatformLibrary.WebBrowser
 {

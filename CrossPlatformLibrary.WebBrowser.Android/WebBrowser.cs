@@ -1,11 +1,6 @@
-using System;
-using System.Threading.Tasks;
-
 using Android.Content;
 
-using CrossPlatformLibrary.Tracing;
-
-using Guards;
+using Tracing;
 
 namespace CrossPlatformLibrary.WebBrowser
 {
