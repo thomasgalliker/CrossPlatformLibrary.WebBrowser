@@ -4,7 +4,7 @@
     {
         public void OpenUrl(string url)
         {
-            throw Exceptions.NotImplementedInReferenceAssembly();
+            throw new NotImplementedInReferenceAssemblyException();
         }
     }
 }
