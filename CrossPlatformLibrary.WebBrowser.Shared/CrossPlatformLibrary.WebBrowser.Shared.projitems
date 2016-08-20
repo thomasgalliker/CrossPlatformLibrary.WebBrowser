@@ -9,6 +9,7 @@
     <Import_RootNamespace>CrossPlatformLibrary.WebBrowser</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ContainerExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IWebBrowser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WebBrowserBase.cs" />
   </ItemGroup>

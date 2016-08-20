@@ -127,7 +127,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="CrossPlatformLibrary.WebBrowser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\CrossPlatformLibrary.WebBrowser.2.0.0-pre4\lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.dll</HintPath>
+      <HintPath>..\..\..\packages\CrossPlatformLibrary.WebBrowser.2.0.0-pre5\lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Guards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac6aedb73a72f46e, processorArchitecture=MSIL">
