@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>CrossPlatformLibrary.WebBrowser</id>
-    <version>2.0.0-pre5</version>
+    <version>2.0.0-pre6</version>
     <title>CrossPlatformLibrary.WebBrowser</title>
     <authors>Thomas Galliker</authors>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
@@ -13,11 +13,11 @@
     <description>CrossPlatformLibrary.WebBrowser is a cross-platform abstraction which allows to open browser requests.</description>
     <tags>
       xamarin pcl CrossPlatformLibrary.WebBrowser plugin for web browser requests
-      windows phone winphone wp8 wpa81 win81 windowsphone android xamarin.forms xamarin.ios ios monoandroid monodroid monotouch mvvmcross mvvmlight
+      windows phone winphone wp8 wpa81 win81 windowsphone android xamarin.forms xamarin.ios ios monoandroid monodroid monotouch
     </tags>
     <releaseNotes>
       2.0.0-prerelease
-      - Integration of CrossPlatformLibrary 2.x
+      - Refactor to bait-and-switch PCL
 
       1.0.2
       - Integration of latest CrossPlatformLibrary 1.x
@@ -29,8 +29,8 @@
     <language>en-US</language>
     <dependencies>
       <group>
-        <dependency id="CrossPlatformLibrary" version="[1.9.99, 2.0.0)" />
-        <dependency id="Guards" version="1.0.11" />
+        <dependency id="CrossPlatformLibrary" version="[2.0.0,)" />
+        <dependency id="Guards" version="[1.0.14,)" />
       </group>
     </dependencies>
   </metadata>
@@ -44,11 +44,6 @@
     <file src="..\CrossPlatformLibrary.WebBrowser.Android\bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\monoandroid10\CrossPlatformLibrary.WebBrowser.dll" />
     <file src="..\CrossPlatformLibrary.WebBrowser.Android\bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\monoandroid10\CrossPlatformLibrary.WebBrowser.pdb" />
     <file src="..\CrossPlatformLibrary.WebBrowser.Android\bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\monoandroid10\CrossPlatformLibrary.WebBrowser.xml" />
-    
-    <!--Xamarin.iOS Classic API-->
-    <file src="..\CrossPlatformLibrary.WebBrowser.iOS\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\monotouch10\CrossPlatformLibrary.WebBrowser.dll" />
-    <file src="..\CrossPlatformLibrary.WebBrowser.iOS\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\monotouch10\CrossPlatformLibrary.WebBrowser.pdb" />
-    <file src="..\CrossPlatformLibrary.WebBrowser.iOS\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\monotouch10\CrossPlatformLibrary.WebBrowser.xml" />
     
     <!--Xamarin.iOS Unified API-->
     <file src="..\CrossPlatformLibrary.WebBrowser.iOSUnified\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.dll" />
