@@ -12,14 +12,14 @@ namespace CrossPlatformLibrary.WebBrowser
 
         protected WebBrowserBase(ITracer tracer)
         {
-            Guard.ArgumentNotNull(() => tracer);
+            Guard.ArgumentNotNull(tracer, nameof(tracer));
 
             this.tracer = tracer;
         }
 
         public void OpenUrl(string url)
         {
-            Guard.ArgumentNotNullOrEmpty(() => url);
+            Guard.ArgumentNotNullOrEmpty(url, nameof(url));
 
             try
             {
@@ -27,7 +27,7 @@ namespace CrossPlatformLibrary.WebBrowser
             }
             catch (Exception ex)
             {
-                this.tracer.Exception(ex, string.Format("Failed to OpenUrl with url={0}", url));
+                this.tracer.Exception(ex, $"Failed to OpenUrl with url={url}");
             }
         }
 
