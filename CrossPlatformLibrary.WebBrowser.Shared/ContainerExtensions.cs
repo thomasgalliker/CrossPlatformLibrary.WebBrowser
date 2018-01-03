@@ -5,9 +5,9 @@ namespace CrossPlatformLibrary.WebBrowser
 {
     public class ContainerExtension : IContainerExtension
     {
-        public void Initialize(ISimpleIoc container)
+        public void Initialize(IIocContainer container)
         {
-            container.Register<IWebBrowser, WebBrowser>();
+            container.RegisterSingleton<IWebBrowser, WebBrowser>();
         }
     }
 }

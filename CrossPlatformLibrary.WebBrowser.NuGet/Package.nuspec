@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>CrossPlatformLibrary.WebBrowser</id>
-    <version>2.0.0-pre8</version>
+    <version>3.0.0-pre1</version>
     <title>CrossPlatformLibrary.WebBrowser</title>
     <authors>Thomas Galliker</authors>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
@@ -16,20 +16,23 @@
       windows phone winphone wp8 wpa81 win81 windowsphone android xamarin.forms xamarin.ios ios monoandroid monodroid monotouch
     </tags>
     <releaseNotes>
-      2.0.0-prerelease
-      - Refactor to bait-and-switch PCL
+3.0.0-pre
+- Integration of latest CrossPlatformLibrary 3.x
 
-      1.0.2
-      - Integration of latest CrossPlatformLibrary 1.x
+2.0.0
+- Refactor to bait-and-switch PCL
 
-      1.0.1
-      - Added Xamarin iOS PDBs
+1.0.2
+- Integration of latest CrossPlatformLibrary 1.x
+
+1.0.1
+- Added Xamarin iOS PDBs
     </releaseNotes>
-    <copyright>Copyright 2016</copyright>
+    <copyright>Copyright 2018</copyright>
     <language>en-US</language>
     <dependencies>
       <group>
-        <dependency id="CrossPlatformLibrary" version="[2.0.0,)" />
+        <dependency id="CrossPlatformLibrary" version="[3.0.0,)" />
         <dependency id="Guards" version="[1.0.14,)" />
       </group>
     </dependencies>
@@ -49,22 +52,7 @@
     <file src="..\CrossPlatformLibrary.WebBrowser.iOSUnified\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.dll" />
     <file src="..\CrossPlatformLibrary.WebBrowser.iOSUnified\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.pdb" />
     <file src="..\CrossPlatformLibrary.WebBrowser.iOSUnified\bin\iPhone\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\xamarin.ios10\CrossPlatformLibrary.WebBrowser.xml" />
-    
-    <!--Windows Phone 8-->
-    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone8\Bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\wp8\CrossPlatformLibrary.WebBrowser.dll" />
-    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone8\Bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\wp8\CrossPlatformLibrary.WebBrowser.pdb" />
-    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone8\Bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\wp8\CrossPlatformLibrary.WebBrowser.xml" />
-    
-    <!--Windows Phone 8.1-->
-    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone81\Bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.dll" />
-    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone81\Bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.pdb" />
-    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsPhone81\Bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\wpa81\CrossPlatformLibrary.WebBrowser.xml" />
-    
-    <!--Windows Store-->
-    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsStore\Bin\Release\CrossPlatformLibrary.WebBrowser.dll" target="lib\win81\CrossPlatformLibrary.WebBrowser.dll" />
-    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsStore\Bin\Release\CrossPlatformLibrary.WebBrowser.pdb" target="lib\win81\CrossPlatformLibrary.WebBrowser.pdb" />
-    <file src="..\CrossPlatformLibrary.WebBrowser.WindowsStore\Bin\Release\CrossPlatformLibrary.WebBrowser.xml" target="lib\win81\CrossPlatformLibrary.WebBrowser.xml" />
-    
+
     <file src="tools\init.ps1" target="tools\init.ps1" />
     <file src="tools\install.ps1" target="tools\install.ps1" />
     <file src="tools\uninstall.ps1" target="tools\uninstall.ps1" />

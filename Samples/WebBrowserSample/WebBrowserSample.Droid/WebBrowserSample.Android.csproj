@@ -48,13 +48,11 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CrossPlatformLibrary, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\CrossPlatformLibrary.2.0.1\lib\MonoAndroid10\CrossPlatformLibrary.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CrossPlatformLibrary, Version=3.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\CrossPlatformLibrary.3.0.1-pre2\lib\MonoAndroid10\CrossPlatformLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="CrossPlatformLibrary.WebBrowser, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\packages\CrossPlatformLibrary.WebBrowser.2.0.0-pre8\lib\monoandroid10\CrossPlatformLibrary.WebBrowser.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="CrossPlatformLibrary.WebBrowser, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\CrossPlatformLibrary.WebBrowser.3.0.0-pre1\lib\monoandroid10\CrossPlatformLibrary.WebBrowser.dll</HintPath>
     </Reference>
     <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\..\packages\Xamarin.Forms.2.3.4.270\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
